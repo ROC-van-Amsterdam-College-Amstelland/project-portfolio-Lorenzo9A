@@ -78,7 +78,8 @@ body{
         ol{
           margin-top: 0,5%;
           font-family: Arial, Helvetica, sans-serif;
-
+          border: dotted 5px;
+          width: 50%;
         }
 
         a{
