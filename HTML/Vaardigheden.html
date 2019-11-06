@@ -4,8 +4,11 @@
     <link rel="stylesheet" href="../Css/Vaardigheden.css">
     <title>Vaardigheden</title>
 </head>
+<body>
 <header>
     <nav class="Menu">
+            <div class="Naam">
+                    <p>Lorenzo Breedveld</p></div>
         <a  href="Home.html">Home</a>
         <a href="Overmij.html">Over mij</a>
         <a class="active" href="Vaardigheden.html">Vaardigheden</a>
@@ -15,7 +18,7 @@
         <input type="text" placeholder="Search...">
       </nav>
 </header>
-<body> 
+
     <main> 
       <h1>Vaardigheden</h1>
       <div class="Vaardigheden1">
@@ -56,5 +59,37 @@
     
     <script src="../js/Vaardigheden.js"></script>
     </main>
+    <footer>
+            <div class="E-mail">
+                    <p>E-mail:l-Breedveld@outlook.com</p>
+                    </div>
+                    <div class="Links">
+                    <a href="https://nl.linkedin.com/in/lorenzo-breedveld-255a88196?trk=people-guest_profile-result-card_result-card_full-click">linkedin</a>
+                    <a href="https://github.com/Lorenzo9A/Lorenzo9A">Github</a>
+
+                    <div id="datum"></div>
+                    <script>
+                        var now = new Date();
+                        var days = new Array("Zondag", "Maandag", "Dinsdag", "Woensdag", "Donderdag", "Vrijdag", "Zaterdag");
+                        var months = new Array("januari","februari", "maart", "april", "mei", "juni", "juli", "augustus", "september", "oktober", "november", "december");
+                        var date = ((now.getDate()<10) ? "0" : "")+ now.getDate();
+                        function fourdigits(number) {
+                            return (number < 1000) ? number + 1900 : number;
+                        }
+                        today = days[now.getDay()] + " " +
+                                     date + " " +
+                                     months[now.getMonth()] + " " +
+                                       (fourdigits(now.getYear())) ;
+                        document.write(today);
+                        
+                        </script>
+
+
+                    
+                    
+                
+                    </div>
+
+    </footer>
 </body>
 </html>

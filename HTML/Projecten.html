@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="../Css/Project.css">
+    <title>Home</title>
+</head>
+<body>
+ 
+<header>
+    <nav class="Menu">
+            <div class="Naam">
+                    <p>Lorenzo Breedveld</p></div>
+        <a  href="Home.html">Home</a>
+        <a href="Overmij.html">Over mij</a>
+        <a href="Vaardigheden.html">Vaardigheden</a>
+        <a class="active" href="Projecten.html">Projecten</a>
+        <a href="Laatste nieuws.html">Laatste nieuws</a>
+        <a href="Contact.html">Contact</a>
+        <input type="text" placeholder="Search...">
+      </nav>
+</header>
+    <h1>Projecten</h1>
+    <div class="Project1">
+        <h2>Projecten die ik heb gekregen:</h2>
+    </div>
+  <main>
+      <div class="Vlaggen">
+          <h3>1.Project vlaggen</h3>
+          <div class="vlag1&2">
+          <img id="Vlag1" src="../Images/vlag1.JPG" onclick="verander1()"> <img id="Vlag2" src="../Images/vlag2.JPG"  onclick="verander2()">
+          <p>Ik heb een project gehad over dat ik vlaggen moest maken van landen met HTML en CSS codes,
+               hierbij moest ik ook ervoor zorgen dat wanneer ik op een vlag klikte de vlag veranderde naar een andere vlag.</p>
+            </div>
+      </div>`
+      <div class="interesse">
+          <h3>2.Project interesse</h3>
+              <img id="interesse1" src="../Images/interesse1.JPG" onclick="verander3()"> <img id="interesse2" src="../Images/interesse2.JPG" onclick="verander4()">
+              <p>Ik heb een project gehad dat we met HTML en CSS codes,
+                5interesses in games en 5 interesses in sporten moesten maken.
+                 Met links erbij naar websites met meer uitleg over dat spel</p>
+      </div>
+    </main>
+</body>
+
+    
+    <script src="../js/Projecten.js"></script>
+    <footer>
+            <div class="E-mail">
+                    <p>E-mail:l-Breedveld@outlook.com</p>
+                    </div>
+                    <div class="Links">
+                    <a href="https://nl.linkedin.com/in/lorenzo-breedveld-255a88196?trk=people-guest_profile-result-card_result-card_full-click">linkedin</a>
+                    <a href="https://github.com/Lorenzo9A/Lorenzo9A">Github</a>
+
+                    <div id="datum"></div>
+                    <script>
+                        var now = new Date();
+                        var days = new Array("Zondag", "Maandag", "Dinsdag", "Woensdag", "Donderdag", "Vrijdag", "Zaterdag");
+                        var months = new Array("januari","februari", "maart", "april", "mei", "juni", "juli", "augustus", "september", "oktober", "november", "december");
+                        var date = ((now.getDate()<10) ? "0" : "")+ now.getDate();
+                        function fourdigits(number) {
+                            return (number < 1000) ? number + 1900 : number;
+                        }
+                        today = days[now.getDay()] + " " +
+                                     date + " " +
+                                     months[now.getMonth()] + " " +
+                                       (fourdigits(now.getYear())) ;
+                        document.write(today);
+                        
+                        </script>
+                
+                
+                    </div>
+        
+    </footer>
+</body>
+</html>

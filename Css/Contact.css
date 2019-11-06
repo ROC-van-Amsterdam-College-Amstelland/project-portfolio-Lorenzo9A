@@ -63,3 +63,51 @@ body{
     
     
         }
+        .Contact{
+          margin-left: 42%;
+          align-items: center;
+
+
+        }
+        #Naam{
+          border: 3px solid black;
+          width: 30%;
+
+        }
+
+        #E-mail{
+          border:  3px solid black;
+          width: 30%;
+          margin-top: 1%;
+        }
+
+        #Comment{
+          border: 3px solid black;
+          width: 30%;
+          margin-top: 1%;
+        }
+
+        footer{
+          background-color: grey ;
+          height: 50px;
+          display:flex;
+            }
+      .Links {
+        width:20%;
+        height: 100%;
+        display:flex;
+        justify-content:space-around;
+      }
+      .E-mail {
+        width:80%;
+        height:100%;
+      }
+        .Like{
+          margin-left: 65%;
+
+
+
+
+        }
+
+    

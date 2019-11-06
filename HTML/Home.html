@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="../Css/style.css">
+    <title>Home</title>
+</head>
+<body>
+<header>
+    <nav class="Menu">
+        <div class="Naam">
+            <p>Lorenzo Breedveld</p></div>
+        <a class="active" href="Home.html">Home</a>
+        <a href="Overmij.html">Over mij</a>
+        <a href="Vaardigheden.html">Vaardigheden</a>
+        <a href="Projecten.html">Projecten</a>
+        <a href="Laatste nieuws.html">Laatste nieuws</a>
+        <a href="Contact.html">Contact</a>
+        <input type="text" placeholder="Search...">
+      </nav>
+      </header>
+        <main>
+      <h1>Home Pagina</h1>
+      <div id="foto">
+        <img id="Foto1" src="../Images/foto1.jpeg" onclick="verander1()">
+        <img id="foto2" src="../Images/foto2.jpg" onclick="verander2()">
+
+      </div>
+      
+      
+      <div class="Tekst1">
+      <span>Mijn naam is Lorenzo Breedveld, ik ben 16 jaar oud en volg de opleiding Applicatie ontwikkelaar op het MBO College ROC Amstelland. Ik zit in het eerste jaar, na het eerste jaar heb ik nog 2 jaar te gaan en ik hoop in deze 3 jaar heel veel te leren over programmeren en coderen.
+          Ik hou van programmeren/coderen en voetballen.
+      </span>
+    
+    <script src="../js/Script.js"></script>
+    </main>
+    <footer>
+        <div class="E-mail">
+            <p>E-mail:l-Breedveld@outlook.com</p>
+            </div>
+            <div class="Links">
+            <a href="https://nl.linkedin.com/in/lorenzo-breedveld-255a88196?trk=people-guest_profile-result-card_result-card_full-click">linkedin</a>
+            <a href="https://github.com/Lorenzo9A/Lorenzo9A">Github</a>
+
+            <div id="datum"></div>
+            <script>
+                var now = new Date();
+                var days = new Array("Zondag", "Maandag", "Dinsdag", "Woensdag", "Donderdag", "Vrijdag", "Zaterdag");
+                var months = new Array("januari","februari", "maart", "april", "mei", "juni", "juli", "augustus", "september", "oktober", "november", "december");
+                var date = ((now.getDate()<10) ? "0" : "")+ now.getDate();
+                function fourdigits(number) {
+                    return (number < 1000) ? number + 1900 : number;
+                }
+                today = days[now.getDay()] + " " +
+                             date + " " +
+                             months[now.getMonth()] + " " +
+                               (fourdigits(now.getYear())) ;
+                document.write(today);
+                
+                </script>
+        
+        
+            </div>
+    
+    </footer>
+
+    
+</body>
+</html>
