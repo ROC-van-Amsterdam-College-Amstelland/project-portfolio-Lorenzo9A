@@ -1,137 +1,122 @@
-body{
-background-color: darkgray;
-
+body {
+  background-color: darkgray;
 }
 
 .Menu {
-    background-color: grey;
-    display: flex;
-justify-content: center;
-height: 50px;  
+  background-color: grey;
+  display: flex;
+  justify-content: center;
+  height: 50px;
 }
-  
-  
-  .Menu a {
-    float: left;
-    display: flex;
-    color: black;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 17px;
-    font-family: Arial, Helvetica, sans-serif;
-    font-style: oblique;
-  }
-  
-  
-  .Menu a:hover {
-    background-color: #ddd;
-    color: black;
-  }
-  
-  .Menu a.active {
-    background-color: #2196F3;
-    color: white;
-  }
-  
-  
-  .Menu input[type=text] {
-    float: right;
-    padding: 6px;
-    border: none;
-    margin-top: 8px;
-    margin-right: 20px;
-    font-size: 17px;
-  }
-  
-  
-  
-    .Menu a, .Menu input[type=text] {
-      float: none;
-      display: inline;
-      text-align: left;
-      margin: 0;
-      padding: 14px;
-        
-    }
-    .Menu input[type=text] { 
-      border: 1px solid #ccc;
-      border-radius: 10px;
-    }
 
-    h1{
-      margin-left: 43%;
+.Menu a {
+  float: left;
+  display: flex;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-style: oblique;
+}
 
+.Menu a:hover {
+  background-color: #ddd;
+  color: black;
+}
 
-    }
+.Menu a.active {
+  background-color: #2196F3;
+  color: white;
+}
 
-    .Tekst1{
-      border: 1px solid black;
-      width: 30%;
-      justify-content: center;
-      margin-left: 35%;
-      font-family: Arial, Helvetica, sans-serif;
-      font-size: 20px;
-    }
+.Menu input[type=text] {
+  float: right;
+  padding: 6px;
+  border: none;
+  margin-top: 8px;
+  margin-right: 20px;
+  font-size: 17px;
+}
 
-    img{
-      height: 450px;
-      width: 275px;
-      margin-left: 40%;
-      border-radius: 5px;
-    }
+.Menu a, .Menu input[type=text] {
+  float: none;
+  display: inline;
+  text-align: left;
+  margin: 0;
+  padding: 14px;
+}
 
-    #foto2 {
-      display:none;
-    }
+.Menu input[type=text] {
+  border: 1px solid #ccc;
+  border-radius: 10px;
+}
 
-    .Contact{
-      margin-left: 42%;
-      align-items: center;
+h1 {
+  margin-left: 43%;
+}
 
+.Tekst1 {
+  border: 1px solid black;
+  width: 30%;
+  justify-content: center;
+  margin-left: 35%;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+}
 
-    }
-    #Naam{
-      border: 3px solid black;
-      width: 30%;
+img {
+  height: 425px;
+  width: 275px;
+  margin-left: 40%;
+  border-radius: 5px;
+}
 
-    }
+#foto2 {
+  display: none;
+}
 
-    #E-mail{
-      border:  3px solid black;
-      width: 30%;
-      margin-top: 1%;
-    }
+.Contact {
+  margin-left: 42%;
+  align-items: center;
+}
 
-    #Comment{
-      border: 3px solid black;
-      width: 30%;
-      margin-top: 1%;
-    }
+#Naam {
+  border: 3px solid black;
+  width: 30%;
+}
 
-    footer{
-      background-color: grey ;
-      height: 50px;
-      display:flex;
-        }
-  .Links {
-    width:20%;
-    height: 100%;
-    display:flex;
-    justify-content:space-around;
-  }
-  .E-mail {
-    width:80%;
-    height:100%;
-  }
-    .Like{
-      margin-left: 65%;
+#E-mail {
+  border: 3px solid black;
+  width: 30%;
+  margin-top: 1%;
+}
 
+#Comment {
+  border: 3px solid black;
+  width: 30%;
+  margin-top: 1%;
+}
 
+footer {
+  background-color: grey;
+  height: 50px;
+  display: flex;
+}
 
+.Links {
+  width: 20%;
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+}
 
-    }
-    
-  
-  
- 
+.E-mail {
+  width: 80%;
+  height: 100%;
+}
+
+.Like {
+  margin-left: 65%;
+}
