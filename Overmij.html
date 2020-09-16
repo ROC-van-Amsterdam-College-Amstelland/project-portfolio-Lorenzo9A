@@ -1,77 +1,83 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <link rel="stylesheet" href="Css/Overmij.css">
     <title>Overmij</title>
 </head>
+
 <body>
-<header>
-    <nav class="Menu">
-        <div class="Naam">
-            <p>Lorenzo Breedveld</p></div>
-         <a href="Home.html">Home</a>
-         <a class="active" href="Overmij.html">Over mij</a>
-        <a href="Vaardigheden.html">Vaardigheden</a>
-        <a href="Projecten.html">Projecten</a>
-        <a href="Laatste nieuws.html">Laatste nieuws</a>
-        <a href="Contact.html">Contact</a>
-        <input type="text" placeholder="Search...">
-      </nav>
-</header>
+    <header>
+        <nav class="Menu">
+            <div class="Naam">
+                <p>Lorenzo Breedveld</p>
+            </div>
+            <a href="Home.html">Home</a>
+            <a class="active" href="Overmij.html">Over mij</a>
+            <a href="Vaardigheden.html">Vaardigheden</a>
+            <a href="Projecten.html">Projecten</a>
+            <a href="Contact.html">Contact</a>
+            <input type="text" placeholder="Search...">
+        </nav>
+    </header>
 
-  <main>
-      <h1>Over mij</h1>
-      <div id="foto">
-        <img id= "foto3" src="Images/foto3.jpg">
-        
-          <ol> 3 hobby's die ik heb zijn: 
-              <li>Voetbal</li>
-              <img id="Foto4" src="Images/voetbal.jpg">
-              Click <a href="https://www.voetbal.nl/inloggen ">hier</a>
-              <span>Voetbal is mijn grootste hobby,tijdens vrije tijd Voetbal ik het liefst bij de sportclub in me buurt.</span>
+    <main>
+        <h1>Over mij</h1>
+        <div id="foto">
+            <img id="foto3" src="Images/foto3.jpg">
 
-              <li>Programmeren</li>
-              <img id="Foto5" src="Images/programmeren.jpg">
-              Click <a href="https://nl.wikipedia.org/wiki/Programmeren_(computer)">hier</a>
-              <span>Ik vind Programmeren erg leuk,tijdens mijn studie probeer ik ook zoveel mogelijk erover te leren.
-              </span>
-              <li>Gamen</li>
-              <img id="Foto6" src="Images/gamen.jpg">
-              Click <a href="https://nl.wikipedia.org/wiki/Computerspel">hier</a>
-                <span>Gamen vind ik ook erg leuk,dit doe ik als ik niks te doen heb en geen zin heb om te voetballen.</span>
+            <ol> 3 hobby's die ik heb zijn:
+                <li>Voetbal</li>
+                <img id="Foto4" src="Images/voetbal.jpg">
+                Click <a href="https://www.voetbal.nl/inloggen ">hier</a>
+                <span>Voetbal is mijn grootste hobby,tijdens vrije tijd Voetbal ik het liefst bij de sportclub in me
+                    buurt.</span>
+
+                <li>Programmeren</li>
+                <img id="Foto5" src="Images/programmeren.jpg">
+                Click <a href="https://nl.wikipedia.org/wiki/Programmeren_(computer)">hier</a>
+                <span>Ik vind Programmeren erg leuk,tijdens mijn studie probeer ik ook zoveel mogelijk erover te leren.
+                </span>
+                <li>Gamen</li>
+                <img id="Foto6" src="Images/gamen.jpg">
+                Click <a href="https://nl.wikipedia.org/wiki/Computerspel">hier</a>
+                <span>Gamen vind ik ook erg leuk,dit doe ik als ik niks te doen heb en geen zin heb om te
+                    voetballen.</span>
             </ol>
-    <script src="js/Overmij.js"></script>
-          </main>
-          <footer>
-              <div class="E-mail">
-                  <p>E-mail:l-Breedveld@outlook.com</p>
-                  </div>
-                  <div class="Links">
-                  <a href="https://nl.linkedin.com/in/lorenzo-breedveld-255a88196?trk=people-guest_profile-result-card_result-card_full-click">linkedin</a>
-                  <a href="https://github.com/Lorenzo9A/Lorenzo9A">Github</a>
+            <script src="js/Overmij.js"></script>
+    </main>
+    <footer>
+        <div class="E-mail">
+            <p>E-mail:LorenzoBreedveld@gmail.com</p>
+        </div>
+        <div class="Links">
+            <a
+                href="https://nl.linkedin.com/in/lorenzo-breedveld-255a88196?trk=people-guest_profile-result-card_result-card_full-click">linkedin</a>
+            <a href="https://github.com/Lorenzo9A/Lorenzo9A">Github</a>
 
-                  <div id="datum"></div>
-                  <script>
-                      var now = new Date();
-                      var days = new Array("Zondag", "Maandag", "Dinsdag", "Woensdag", "Donderdag", "Vrijdag", "Zaterdag");
-                      var months = new Array("januari","februari", "maart", "april", "mei", "juni", "juli", "augustus", "september", "oktober", "november", "december");
-                      var date = ((now.getDate()<10) ? "0" : "")+ now.getDate();
-                      function fourdigits(number) {
-                          return (number < 1000) ? number + 1900 : number;
-                      }
-                      today = days[now.getDay()] + " " +
-                                   date + " " +
-                                   months[now.getMonth()] + " " +
-                                     (fourdigits(now.getYear())) ;
-                      document.write(today);
-                      
-                      </script>
-              
-              
-                  </div>
-          
+            <div id="datum"></div>
+            <script>
+                var now = new Date();
+                var days = new Array("Zondag", "Maandag", "Dinsdag", "Woensdag", "Donderdag", "Vrijdag", "Zaterdag");
+                var months = new Array("januari", "februari", "maart", "april", "mei", "juni", "juli", "augustus", "september", "oktober", "november", "december");
+                var date = ((now.getDate() < 10) ? "0" : "") + now.getDate();
+                function fourdigits(number) {
+                    return (number < 1000) ? number + 1900 : number;
+                }
+                today = days[now.getDay()] + " " +
+                    date + " " +
+                    months[now.getMonth()] + " " +
+                    (fourdigits(now.getYear()));
+                document.write(today);
+
+            </script>
 
 
-          </footer>
+        </div>
+
+
+
+    </footer>
 </body>
+
 </html>

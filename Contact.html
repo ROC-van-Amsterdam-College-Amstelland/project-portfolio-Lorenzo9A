@@ -1,68 +1,72 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-    <link rel="stylesheet" href="Css/Contact.css">
-    <title>Contact</title>
+  <link rel="stylesheet" href="Css/Contact.css">
+  <title>Contact</title>
 </head>
+
 <body id="body">
-<header>
-  
+  <header>
+
     <nav class="Menu">
       <div class="Naam">
-        <p>Lorenzo Breedveld</p></div>
-        <a  href="Home.html">Home</a>
-        <a href="Overmij.html">Over mij</a>
-        <a href="Vaardigheden.html">Vaardigheden</a>
-        <a  href="Projecten.html">Projecten</a>
-        <a  href="Laatste nieuws.html">Laatste nieuws</a>
-        <a class="active" href="Contact.html">Contact</a>
-        <input type="text" placeholder="Search...">
-      </nav>
-      </header>
-      <main>
-      <h1>Contact</h1>
-      <div class="Contact">
-    <div id="Naam">Naam:Lorenzo Breedveld</div>
-    <div id="E-mail">E-mail:Lorenzo.Breedveld@student-rocva.nl</div>
-    <div id="Comment">Opmerking:</div>
+        <p>Lorenzo Breedveld</p>
       </div>
+      <a href="Home.html">Home</a>
+      <a href="Overmij.html">Over mij</a>
+      <a href="Vaardigheden.html">Vaardigheden</a>
+      <a href="Projecten.html">Projecten</a>
+      <a class="active" href="Contact.html">Contact</a>
+      <input type="text" placeholder="Search...">
+    </nav>
+  </header>
+  <main>
+    <h1>Contact</h1>
+    <div class="Contact">
+      <div id="Naam">Naam:Lorenzo Breedveld</div>
+      <div id="E-mail">E-mail:Lorenzo.Breedveld@student-rocva.nl</div>
+      <div id="Comment">Opmerking:</div>
+    </div>
     <div class="Like">
-    <button type="button" onclick="groen()">Like</button>
-    <button type="button" onclick="rood()">Dislike</button>
+      <button type="button" onclick="groen()">Like</button>
+      <button type="button" onclick="rood()">Dislike</button>
     </div>
 
 
-    
+
     <script src="js/Contact.js"></script>
-    </main>
-    <footer>
-        <div class="E-mail">
-        <p>E-mail:l-Breedveld@outlook.com</p>
-        </div>
-        <div class="Links">
-        <a href="https://nl.linkedin.com/in/lorenzo-breedveld-255a88196?trk=people-guest_profile-result-card_result-card_full-click">linkedin</a>
-        <a href="https://github.com/Lorenzo9A/Lorenzo9A">Github</a>
-        
-        <div id="datum"></div>
-        <script>
-            var now = new Date();
-            var days = new Array("Zondag", "Maandag", "Dinsdag", "Woensdag", "Donderdag", "Vrijdag", "Zaterdag");
-            var months = new Array("januari","februari", "maart", "april", "mei", "juni", "juli", "augustus", "september", "oktober", "november", "december");
-            var date = ((now.getDate()<10) ? "0" : "")+ now.getDate();
-            function fourdigits(number) {
-                return (number < 1000) ? number + 1900 : number;
-            }
-            today = days[now.getDay()] + " " +
-                         date + " " +
-                         months[now.getMonth()] + " " +
-                           (fourdigits(now.getYear())) ;
-            document.write(today);
-            
-            </script>
-    
-        </div>
+  </main>
+  <footer>
+    <div class="E-mail">
+      <p>E-mail:LorenzoBreedveld@gmail.com</p>
+    </div>
+    <div class="Links">
+      <a
+        href="https://nl.linkedin.com/in/lorenzo-breedveld-255a88196?trk=people-guest_profile-result-card_result-card_full-click">linkedin</a>
+      <a href="https://github.com/Lorenzo9A/Lorenzo9A">Github</a>
+
+      <div id="datum"></div>
+      <script>
+        var now = new Date();
+        var days = new Array("Zondag", "Maandag", "Dinsdag", "Woensdag", "Donderdag", "Vrijdag", "Zaterdag");
+        var months = new Array("januari", "februari", "maart", "april", "mei", "juni", "juli", "augustus", "september", "oktober", "november", "december");
+        var date = ((now.getDate() < 10) ? "0" : "") + now.getDate();
+        function fourdigits(number) {
+          return (number < 1000) ? number + 1900 : number;
+        }
+        today = days[now.getDay()] + " " +
+          date + " " +
+          months[now.getMonth()] + " " +
+          (fourdigits(now.getYear()));
+        document.write(today);
+
+      </script>
+
+    </div>
 
 
-    </footer>
+  </footer>
 </body>
+
 </html>
